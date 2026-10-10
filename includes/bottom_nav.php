@@ -1,7 +1,11 @@
 <?php
 // includes/bottom_nav.php
 $base_url = '';
-if (strpos($_SERVER['REQUEST_URI'], '/TeeDiewJob') === 0) {
+if (strpos($_SERVER['REQUEST_URI'], '/TDJSB') === 0) {
+    $base_url = '/TDJSB';
+} elseif (strpos($_SERVER['REQUEST_URI'], '/tdjsb') === 0) {
+    $base_url = '/tdjsb';
+} elseif (strpos($_SERVER['REQUEST_URI'], '/TeeDiewJob') === 0) {
     $base_url = '/TeeDiewJob';
 }
 

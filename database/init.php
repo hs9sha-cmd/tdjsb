@@ -1,6 +1,6 @@
 <?php
 /**
- * TeeDiewJob - Database Initialization Script
+ * TDJSB - Database Initialization Script
  * Runs schema.sql and ensures the default admin account is configured.
  */
 

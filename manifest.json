@@ -1,7 +1,7 @@
 {
-  "name": "TeeDiewJob School Management",
-  "short_name": "TeeDiewJob",
-  "description": "ระบบบริหารจัดการกิจการนักเรียนและงานบุคลากรในโรงเรียน (ที่เดียวจบ)",
+  "name": "TDJSB School Management",
+  "short_name": "TDJSB",
+  "description": "ระบบบริหารจัดการโรงเรียน TDJSB",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

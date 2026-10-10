@@ -9,7 +9,7 @@
             ?>
             <!-- Quick Link to full Dashboard -->
             <div class="no-print" style="text-align: center; margin-top: 10px; margin-bottom: 20px;">
-                <a href="<?= isset($base_url) ? $base_url : '/TeeDiewJob' ?>/src/actions/teacher_dashboard.php" style="color: var(--text-muted); font-size: 0.82rem; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">
+                <a href="<?= isset($base_url) ? $base_url : '' ?>/src/actions/teacher_dashboard.php" style="color: var(--text-muted); font-size: 0.82rem; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">
                     <span class="material-symbols-rounded" style="font-size: 18px;">dashboard</span>
                     ดูข้อมูลเชิงลึก (Dashboard เดิม)
                 </a>

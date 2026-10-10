@@ -1,6 +1,6 @@
-# 🏫 TeeDiewJob (TDJ) — School Management System Template
+# 🏫 TDJSB — School Management System (ระบบบริหารจัดการโรงเรียน)
 
-> **ระบบบริหารกิจการนักเรียนและงานบุคลากรโรงเรียน (White-label Template)**  
+> **ระบบบริหารกิจการนักเรียนและงานบุคลากรโรงเรียน (TDJSB)**  
 > พัฒนาขึ้นด้วย Native PHP + PDO MySQL/MariaDB ออกแบบรองรับการใช้งานผ่านมือถือ (Mobile-First / PWA Ready) พร้อมธีมใหม่ **Pastel Pink & Purple Glassmorphism**
 
 ---
@@ -86,7 +86,7 @@ chmod -R 755 assets/uploads/
 ## 📁 โครงสร้างโปรเจกต์ (Clean Architecture)
 
 ```text
-TDJ/
+TDJSB/
 ├── assets/
 │   ├── css/                  # สไตล์ชีท (liquid-glass.css, style.css)
 │   ├── js/                   # สคริปต์สแกนเนอร์, QR Code, HTML2PDF

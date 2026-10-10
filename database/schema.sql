@@ -1,5 +1,5 @@
 -- =====================================================================
--- TeeDiewJob - Clean Database Schema (White-label Template)
+-- TDJSB - Clean Database Schema (White-label Template)
 -- Created: 2026-10-10
 -- Compliant with PDPA: Zero residual personal student/teacher data
 -- =====================================================================

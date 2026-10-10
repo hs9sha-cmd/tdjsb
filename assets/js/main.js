@@ -207,7 +207,9 @@ document.addEventListener('DOMContentLoaded', function() {
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
         // Find base_url equivalent from current path to register SW at root
-        const basePath = window.location.pathname.startsWith('/TeeDiewJob') ? '/TeeDiewJob' : '';
+        const basePath = window.location.pathname.startsWith('/TDJSB') ? '/TDJSB' :
+                         window.location.pathname.startsWith('/tdjsb') ? '/tdjsb' :
+                         window.location.pathname.startsWith('/TeeDiewJob') ? '/TeeDiewJob' : '';
         navigator.serviceWorker.register(basePath + '/sw.js')
             .then(registration => {
                 console.log('[Service Worker] Registered with scope:', registration.scope);

@@ -4,7 +4,11 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 $base_url = '';
-if (strpos($_SERVER['REQUEST_URI'], '/TeeDiewJob') === 0) {
+if (strpos($_SERVER['REQUEST_URI'], '/TDJSB') === 0) {
+    $base_url = '/TDJSB';
+} elseif (strpos($_SERVER['REQUEST_URI'], '/tdjsb') === 0) {
+    $base_url = '/tdjsb';
+} elseif (strpos($_SERVER['REQUEST_URI'], '/TeeDiewJob') === 0) {
     $base_url = '/TeeDiewJob';
 }
 
@@ -159,7 +163,7 @@ if ($topbar_teacher) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php 
-    $sys_school_name = !empty($site_settings['school_name']) ? htmlspecialchars($site_settings['school_name']) : 'TeeDiewJob';
+    $sys_school_name = !empty($site_settings['school_name']) ? htmlspecialchars($site_settings['school_name']) : 'TDJSB';
     $sys_school_logo = !empty($site_settings['school_logo']) ? htmlspecialchars($site_settings['school_logo']) : 'assets/images/school_logo.png';
     ?>
     <title><?php echo isset($page_title) ? htmlspecialchars($page_title) . ' - ' : ''; ?><?= $sys_school_name ?></title>

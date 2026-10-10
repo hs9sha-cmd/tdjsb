@@ -11,7 +11,10 @@ function isLoggedIn() {
 }
 
 function getBaseUrl() {
-    return (strpos($_SERVER['REQUEST_URI'], '/TeeDiewJob') === 0) ? '/TeeDiewJob' : '';
+    if (strpos($_SERVER['REQUEST_URI'], '/TDJSB') === 0) return '/TDJSB';
+    if (strpos($_SERVER['REQUEST_URI'], '/tdjsb') === 0) return '/tdjsb';
+    if (strpos($_SERVER['REQUEST_URI'], '/TeeDiewJob') === 0) return '/TeeDiewJob';
+    return '';
 }
 
 function requireLogin() {

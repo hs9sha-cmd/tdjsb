@@ -1,13 +1,17 @@
 <?php
 // includes/sidebar.php
 $base_url = '';
-if (strpos($_SERVER['REQUEST_URI'], '/TeeDiewJob') === 0) {
+if (strpos($_SERVER['REQUEST_URI'], '/TDJSB') === 0) {
+    $base_url = '/TDJSB';
+} elseif (strpos($_SERVER['REQUEST_URI'], '/tdjsb') === 0) {
+    $base_url = '/tdjsb';
+} elseif (strpos($_SERVER['REQUEST_URI'], '/TeeDiewJob') === 0) {
     $base_url = '/TeeDiewJob';
 }
 $user_roles = $_SESSION['roles'] ?? [];
 ?>
 <?php
-$side_school_name = !empty($site_settings['school_name']) ? htmlspecialchars($site_settings['school_name']) : 'TeeDiewJob';
+$side_school_name = !empty($site_settings['school_name']) ? htmlspecialchars($site_settings['school_name']) : 'TDJSB';
 $side_school_logo = !empty($site_settings['school_logo']) ? htmlspecialchars($site_settings['school_logo']) : 'assets/images/school_logo.png';
 ?>
 <aside class="sidebar" id="sidebar">

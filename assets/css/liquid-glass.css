@@ -1,0 +1,197 @@
+/* 
+ * Liquid Glass - Pastel Pink & Purple Theme
+ * ธีมพาสเทล ชมพู-ม่วง (Frosted Glassmorphism)
+ */
+
+:root {
+    /* Main Pastel Theme Colors */
+    --primary-color: #a855f7; /* Pastel Purple */
+    --primary-hover: #9333ea;
+    --secondary-color: #f472b6; /* Pastel Pink */
+    --accent-pink: #ec4899;
+    --accent-purple: #8b5cf6;
+    --accent-lavender: #c084fc;
+    
+    /* Soft Dreamy Pastel Mesh Background */
+    --bg-main: radial-gradient(circle at 10% 20%, #fdf2f8 0%, #faf5ff 35%, #f5f3ff 70%, #fce7f3 100%) fixed;
+    
+    /* Translucent Glass Panels */
+    --bg-panel: rgba(255, 255, 255, 0.75);
+    --bg-topbar: rgba(255, 255, 255, 0.82);
+    --bg-sidebar: rgba(255, 255, 255, 0.85);
+    
+    /* Borders & Highlights for Pastel Glass */
+    --border-color: rgba(244, 114, 182, 0.22);
+    --border-sidebar: rgba(216, 180, 254, 0.28);
+    
+    /* Typography */
+    --text-main: #2e1065; /* Deep Violet for high readability */
+    --text-muted: #7e22ce; /* Soft Violet/Purple */
+    --text-sidebar: #3b0764;
+    --text-sidebar-muted: #6b21a8;
+    
+    /* Shadows & Glow */
+    --shadow-sm: 0 8px 30px 0 rgba(168, 85, 247, 0.08);
+    --shadow-md: 0 12px 36px 0 rgba(236, 72, 153, 0.12);
+    
+    /* Input */
+    --bg-input: rgba(255, 255, 255, 0.85);
+}
+
+/* Base Body Adjustments */
+body {
+    background: var(--bg-main) !important;
+    color: var(--text-main);
+}
+
+/* Glassmorphism Containers */
+.card, .home-section, .modal-content, .sidebar, .topbar {
+    background: var(--bg-panel) !important;
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    border: 1px solid var(--border-color) !important;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.95), var(--shadow-sm) !important;
+}
+
+/* Topbar Branding & Icon Tones */
+.topbar {
+    border-bottom: 1px solid rgba(216, 180, 254, 0.35) !important;
+}
+
+/* Sidebar Styling in Pastel */
+.sidebar {
+    border-right: 1px solid rgba(216, 180, 254, 0.35) !important;
+}
+
+.sidebar-menu li a {
+    color: var(--text-sidebar-muted) !important;
+    transition: all 0.25s ease;
+}
+
+.sidebar-menu li a:hover {
+    background: rgba(244, 114, 182, 0.12) !important;
+    color: #9333ea !important;
+    transform: translateX(3px);
+}
+
+.sidebar-menu li a.active {
+    background: linear-gradient(135deg, #f472b6 0%, #c084fc 50%, #9333ea 100%) !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 18px rgba(168, 85, 247, 0.32), inset 0 1px 1px rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Buttons (Pastel Pink to Purple Gradient) */
+.btn-primary, .btn-submit {
+    background: linear-gradient(135deg, #f472b6 0%, #c084fc 50%, #9333ea 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 6px 20px rgba(168, 85, 247, 0.28) !important;
+    color: #ffffff !important;
+    text-shadow: 0 1px 2px rgba(147, 51, 234, 0.3) !important;
+    backdrop-filter: blur(10px);
+    transition: all 0.25s ease;
+}
+
+.btn-primary:hover, .btn-submit:hover {
+    background: linear-gradient(135deg, #fb7185 0%, #d8b4fe 50%, #7e22ce 100%) !important;
+    color: #ffffff !important;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), 0 10px 25px rgba(168, 85, 247, 0.4) !important;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border-color: rgba(168, 85, 247, 0.4) !important;
+    color: #9333ea !important;
+    background: rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(10px);
+}
+
+.btn-outline:hover {
+    background: linear-gradient(135deg, #f472b6 0%, #a855f7 100%) !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+}
+
+/* Inputs & Form Controls */
+.form-control {
+    background: rgba(255, 255, 255, 0.85) !important;
+    border: 1.5px solid rgba(216, 180, 254, 0.45) !important;
+    color: var(--text-main) !important;
+    border-radius: 12px;
+}
+
+.form-control:focus {
+    background: #ffffff !important;
+    border-color: #c084fc !important;
+    box-shadow: 0 0 0 4px rgba(232, 121, 249, 0.22) !important;
+}
+
+/* Dashboard Stat Cards */
+.dashboard-grid .stat-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(253, 242, 248, 0.6)) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.95) !important;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 1), 0 8px 25px rgba(168, 85, 247, 0.08) !important;
+    color: var(--text-main) !important;
+}
+
+.dashboard-grid .stat-card .stat-icon {
+    background: linear-gradient(135deg, rgba(244, 114, 182, 0.2), rgba(168, 85, 247, 0.25)) !important;
+    color: #9333ea !important;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.12);
+}
+
+.dashboard-grid .stat-card .stat-value {
+    color: #4a044e !important;
+}
+
+.dashboard-grid .stat-card .stat-label {
+    color: #7e22ce !important;
+}
+
+/* Quick Action Buttons (Teacher Home) */
+.action-btn {
+    background: rgba(255, 255, 255, 0.72) !important;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.9) !important;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.95), 0 6px 18px rgba(168, 85, 247, 0.06) !important;
+    transition: all 0.25s ease;
+}
+
+.action-btn:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(253, 242, 248, 0.9)) !important;
+    transform: translateY(-3px) scale(1.02);
+    border-color: rgba(244, 114, 182, 0.5) !important;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 1), 0 10px 25px rgba(236, 72, 153, 0.15) !important;
+}
+
+.action-btn .material-symbols-rounded {
+    color: #9333ea !important;
+}
+
+/* Profile Card in teacher_home */
+.profile-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(250, 245, 255, 0.55)) !important;
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.95) !important;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 1), 0 12px 35px rgba(168, 85, 247, 0.1) !important;
+    color: var(--text-main) !important;
+}
+
+.profile-card h2, .profile-card p {
+    color: #3b0764 !important;
+}
+
+.profile-card .profile-badge {
+    background: linear-gradient(135deg, rgba(244, 114, 182, 0.2), rgba(168, 85, 247, 0.2)) !important;
+    color: #7e22ce !important;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+/* Status Pills */
+.status-present, .status-late, .status-absent, .status-leave {
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5);
+}

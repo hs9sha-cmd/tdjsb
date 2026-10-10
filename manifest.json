@@ -1,0 +1,19 @@
+{
+  "name": "TeeDiewJob School Management",
+  "short_name": "TeeDiewJob",
+  "description": "ระบบบริหารจัดการกิจการนักเรียนและงานบุคลากรในโรงเรียน (ที่เดียวจบ)",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#fbfbfd",
+  "icons": [
+    {
+      "src": "iconAPP.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

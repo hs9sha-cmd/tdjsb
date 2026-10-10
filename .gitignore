@@ -1,0 +1,36 @@
+# Database Configuration (Security: Do not commit production credentials)
+config/database.php
+
+# Uploaded Files (Ignore all user uploads but keep folder structure via .gitkeep)
+assets/uploads/students/*
+!assets/uploads/students/.gitkeep
+assets/uploads/attendance/*
+!assets/uploads/attendance/.gitkeep
+assets/uploads/cases/*
+!assets/uploads/cases/.gitkeep
+assets/uploads/system/*
+!assets/uploads/system/.gitkeep
+assets/uploads/signatures/*
+!assets/uploads/signatures/.gitkeep
+assets/uploads/teaching_logs/*
+!assets/uploads/teaching_logs/.gitkeep
+assets/uploads/messages/*
+!assets/uploads/messages/.gitkeep
+assets/uploads/teachers/*
+!assets/uploads/teachers/.gitkeep
+
+# Backups and temporary files
+*.sql.gz
+*.zip
+*.tar.gz
+*.bak
+Logo_SB.png
+
+# macOS & OS files
+.DS_Store
+Thumbs.db
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp

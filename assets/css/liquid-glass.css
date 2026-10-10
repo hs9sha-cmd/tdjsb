@@ -111,18 +111,48 @@ body {
     border-color: transparent !important;
 }
 
-/* Inputs & Form Controls */
-.form-control {
-    background: rgba(255, 255, 255, 0.85) !important;
-    border: 1.5px solid rgba(216, 180, 254, 0.45) !important;
-    color: var(--text-main) !important;
+/* Inputs & Form Controls - High Contrast & Crisp Readability */
+.form-control,
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="time"],
+input[type="file"],
+textarea,
+select {
+    background: #ffffff !important;
+    border: 1.5px solid rgba(168, 85, 247, 0.4) !important;
+    color: #0f172a !important; /* Solid dark text - won't blend into frame */
     border-radius: 12px;
+    font-weight: 500 !important;
+    font-size: 0.95rem !important;
 }
 
-.form-control:focus {
+.form-control::placeholder {
+    color: #64748b !important;
+    opacity: 0.85 !important;
+}
+
+.form-control:focus,
+input:focus,
+textarea:focus,
+select:focus {
     background: #ffffff !important;
-    border-color: #c084fc !important;
-    box-shadow: 0 0 0 4px rgba(232, 121, 249, 0.22) !important;
+    border-color: #9333ea !important;
+    box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.22) !important;
+    color: #000000 !important;
+    outline: none !important;
+}
+
+/* Labels and Helper Texts */
+label, .form-label {
+    color: #1e1b4b !important; /* Dark Indigo */
+    font-weight: 600 !important;
+}
+
+small, .text-muted {
+    color: #475569 !important; /* Slate 600 - clearly legible */
+    font-weight: 500 !important;
 }
 
 /* Dashboard Stat Cards */

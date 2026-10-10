@@ -210,22 +210,22 @@ include '../../includes/header.php';
                 ⚙️ กฎเกณฑ์และฟังก์ชันเฉพาะโรงเรียน
             </h3>
             
-            <div class="form-group" style="margin-bottom: 15px; background: #f8fafc; padding: 14px; border-radius: 10px; border: 1px solid var(--border-color);">
-                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; font-weight: 600; margin-bottom: 4px;">
-                    <input type="checkbox" name="enable_friday_prayer" value="1" <?= $enable_friday_prayer === '1' ? 'checked' : '' ?> style="width: 18px; height: 18px;">
+            <div class="form-group" style="margin-bottom: 15px; background: #ffffff; padding: 16px; border-radius: 12px; border: 1.5px solid rgba(216, 180, 254, 0.7); box-shadow: 0 2px 6px rgba(0,0,0,0.02);">
+                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; font-weight: 700; margin-bottom: 6px; color: #1e1b4b; font-size: 0.95rem;">
+                    <input type="checkbox" name="enable_friday_prayer" value="1" <?= $enable_friday_prayer === '1' ? 'checked' : '' ?> style="width: 18px; height: 18px; accent-color: #9333ea;">
                     เปิดใช้งานระบบละหมาดวันศุกร์
                 </label>
-                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted); padding-left: 28px;">
+                <p style="margin: 0; font-size: 0.88rem; color: #334155; padding-left: 28px; line-height: 1.5;">
                     หาก <b>เปิดใช้งาน</b> จะแสดงเมนูสแกนเข้า-ออกและรายงานละหมาดวันศุกร์สำหรับนักเรียนมุสลิม (เหมาะสำหรับโรงเรียนในภาคใต้หรือโรงเรียนที่มีนักเรียนมุสลิม)
                 </p>
             </div>
 
-            <div class="form-group" style="margin-bottom: 15px; background: #f8fafc; padding: 14px; border-radius: 10px; border: 1px solid var(--border-color);">
-                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; font-weight: 600; margin-bottom: 4px;">
-                    <input type="checkbox" name="require_teaching_image" value="1" <?= $require_teaching_image === '1' ? 'checked' : '' ?> style="width: 18px; height: 18px;">
+            <div class="form-group" style="margin-bottom: 15px; background: #ffffff; padding: 16px; border-radius: 12px; border: 1.5px solid rgba(216, 180, 254, 0.7); box-shadow: 0 2px 6px rgba(0,0,0,0.02);">
+                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; font-weight: 700; margin-bottom: 6px; color: #1e1b4b; font-size: 0.95rem;">
+                    <input type="checkbox" name="require_teaching_image" value="1" <?= $require_teaching_image === '1' ? 'checked' : '' ?> style="width: 18px; height: 18px; accent-color: #9333ea;">
                     บังคับแนบรูปภาพรายงานการสอน
                 </label>
-                <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted); padding-left: 28px;">
+                <p style="margin: 0; font-size: 0.88rem; color: #334155; padding-left: 28px; line-height: 1.5;">
                     หาก <b>เปิดใช้งาน</b> ครูผู้สอนจะต้องแนบรูปถ่ายการสอนในคาบทุกครั้งจึงจะส่งรายงานได้
                 </p>
             </div>

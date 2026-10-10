@@ -20,7 +20,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
 $theme_class = 'theme-green'; // Default for teacher or normal users
 
 if (strpos($current_page, 'admin_') === 0) {
-    $theme_class = 'theme-dark';
+    $theme_class = 'theme-admin';
 } elseif (strpos($current_page, 'academic_') === 0 || strpos($current_page, 'executive_') === 0) {
     $theme_class = 'theme-academic';
 } elseif (strpos($current_page, 'discipline_') === 0) {

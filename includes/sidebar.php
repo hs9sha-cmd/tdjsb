@@ -55,9 +55,11 @@ $side_school_logo = !empty($site_settings['school_logo']) ? htmlspecialchars($si
                     <li><a href="<?= $base_url ?>/src/actions/admin_users.php">👨‍🏫 จัดการข้อมูลครู</a></li>
                     <li><a href="<?= $base_url ?>/src/actions/admin_students.php">👨‍🎓 จัดการข้อมูลนักเรียน</a></li>
                     <li><a href="<?= $base_url ?>/src/actions/admin_import_religion.php">🕌 นำเข้าข้อมูลศาสนา</a></li>
+                    <!-- ซ่อนตามความต้องการ: จัดการรายวิชา, จัดการภาระงานสอน, ปรับแก้ไขบันทึกการสอน
                     <li><a href="<?= $base_url ?>/src/actions/admin_subjects.php">📚 จัดการรายวิชา</a></li>
                     <li><a href="<?= $base_url ?>/src/actions/admin_assign_subjects.php">🎓 จัดการภาระงานสอน</a></li>
                     <li><a href="<?= $base_url ?>/src/actions/admin_teaching_logs.php">📝 ปรับแก้ไขบันทึกการสอน</a></li>
+                    -->
                     <li><a href="<?= $base_url ?>/src/actions/admin_web_management.php">🌐 การจัดการหน้าเว็บ</a></li>
                     <li><a href="<?= $base_url ?>/src/actions/admin_settings.php">⚙️ ตั้งค่าระบบ</a></li>
                     <li><a href="<?= $base_url ?>/src/actions/admin_clear_data.php" style="color: var(--danger-color);">⚠️ ล้างข้อมูล</a></li>

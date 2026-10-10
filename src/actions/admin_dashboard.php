@@ -209,6 +209,7 @@ $term_display = $active_term ? "ภาคเรียนที่ " . $active_te
                 <div class="menu-icon">🕌</div>
                 <div class="menu-text">นำเข้าข้อมูลศาสนา</div>
             </a>
+            <!-- ซ่อนตามความต้องการ: จัดการรายวิชา, จัดการภาระงานสอน, ปรับแก้ไขบันทึกการสอน
             <a href="admin_subjects.php" class="menu-item">
                 <div class="menu-icon">📚</div>
                 <div class="menu-text">จัดการรายวิชา</div>
@@ -221,6 +222,7 @@ $term_display = $active_term ? "ภาคเรียนที่ " . $active_te
                 <div class="menu-icon">📝</div>
                 <div class="menu-text">ปรับแก้ไขบันทึกการสอน</div>
             </a>
+            -->
             <a href="admin_web_management.php" class="menu-item">
                 <div class="menu-icon">🌐</div>
                 <div class="menu-text">การจัดการหน้าเว็บ</div>
